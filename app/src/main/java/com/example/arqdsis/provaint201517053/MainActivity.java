@@ -12,7 +12,7 @@ import android.widget.EditText;
 public class MainActivity extends Activity {
 
 
-    public static final String TABUADA = "com.example.arqdsis.provaint201517053.TABUADA";
+    public static final String TABUADA_DO = "com.example.arqdsis.provaint201517053.TABUADA_DO";
     public static final String TABUADA_ATE = "com.example.arqdsis.provaint201517053.TABUADA_ATE";
 
     /**
@@ -31,13 +31,13 @@ public class MainActivity extends Activity {
      */
     public void calcular(View view) {
         //Pega os valores dos campos
-        EditText txt_tabuada = (EditText)findViewById(R.id.edt_tabuada);
+        EditText txt_tabuada = (EditText)findViewById(R.id.edt_tabuada_do);
         EditText txt_ate = (EditText)findViewById(R.id.edt_ate);
         String qualtabuada = txt_tabuada.getText().toString();
         String ate_tabuada = txt_ate.getText().toString();
         //Monta o Intent para mandar para outra Tela
         Intent intent = new Intent(this, CalculoActivity.class);
-        intent.putExtra(TABUADA,qualtabuada);
+        intent.putExtra(TABUADA_DO,qualtabuada);
         intent.putExtra(TABUADA_ATE,ate_tabuada);
         startActivity(intent);
 

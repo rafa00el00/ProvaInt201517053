@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/Tabuada"
-        android:id="@+id/edt_tabuada"
+        android:id="@+id/edt_tabuada_do"
         />
 
     <EditText
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/Ate"
         android:id="@+id/edt_ate"
-        android:layout_below="@id/edt_tabuada"
+        android:layout_below="@id/edt_tabuada_do"
         />
 
     <Button
@@ -30,6 +30,5 @@
         android:onClick="calcular"
 
         />
-
 
 </RelativeLayout>
